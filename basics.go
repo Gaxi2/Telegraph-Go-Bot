@@ -82,7 +82,7 @@ Hey %v
 
 Welcome to %s 
 
-I can do anything related to Telegraph like create accounts, create pages, upload media and so on. Please see a full list in help message
+I am private bot for @findhub004. Don't Use if you aren't admin of @findhub004 as it may leak your data.
 `
 
 var helpMessage = fmt.Sprintf(`
@@ -92,10 +92,10 @@ Still here? It's not optional. Go read it.
 
 <b>Available Commands</b>
 
-/guide - Usage Guide
+
 /html - Available HTML Tags and Attributes
-/create - Create a new account
-/new - Alias for 'create'
+
+
 /accounts - List all accounts
 /editshortname - Edit account's short name
 /editauthorname - Edit account's author name
@@ -108,13 +108,13 @@ Still here? It's not optional. Go read it.
 /newpage - Alias for 'page'
 /pages - List pages for a particular account
 /views - Get views of a particular page
-/start - Check if bot is running
-/help - Help Message
+/start - Check if bot is running {Admins Only}
+
 /about - About this bot
 `, guideLink)
 
 var aboutMessage = fmt.Sprintf(`
-A telegraph bot by @StarkBots
+A admin bot for @findhub004
 
 <b>Language</b> - <a href="https://go.dev">Golang</a>
 
@@ -122,11 +122,11 @@ A telegraph bot by @StarkBots
 
 <b>Source Code</b> - <a href="https://github.com/StarkBotsIndustries/Telegraph-Go-Bot">GitHub Repository</a>
 
-<b>Usage Guide</b> - %v
+<b>Usage Guide</b> - <a> Admins Don't Need It. </a>
 
-<b>Telegram Library</b> - <a href="https://github.com/PaulSonOfLars/gotgbot">gotgbot</a>
 
-Developed with ❤️ by @StarkProgrammer
+
+Developed with ❤️ by @finder004
 `, guideLink)
 
 var htmlTutMessage = `
@@ -150,14 +150,14 @@ var homeButtons = [][]gotgbot.InlineKeyboardButton{{
 
 var mainButtons = [][]gotgbot.InlineKeyboardButton{
 	{
-		{Text: "✨ Bot Status and More Bots ✨", Url: "https://t.me/StarkBots/7"},
+		{Text: "✨ FindHub ✨", Url: "https://t.me/hub004bot"},
 	},
 	{
-		{Text: "How to Use ❔", CallbackData: "help"},
+		{Text: "Admin Region", CallbackData: "help"},
 		{Text: "🎪 About 🎪", CallbackData: "about"},
 	},
 	{
-		{Text: "♥ More Amazing bots ♥", Url: "https://t.me/StarkBots"},
+		{Text: "♥Updates♥", Url: "https://t.me/findhub004"},
 	},
 }
 
